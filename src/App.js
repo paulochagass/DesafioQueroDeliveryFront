@@ -21,7 +21,7 @@ function App() {
           )
         )
       }
-      if(left && position ==! 0) {
+      if(left && position !== 0) {
         set(
           value.map(
             (img, index) => {
@@ -40,7 +40,7 @@ function App() {
     if(right && position < value.length - 1) {
       return <a href="#"><h1 onClick={handleClick} className="arrow right">❯</h1></a>
     } 
-    if(left && position ==! 0) {
+    if(left && position !== 0) {
       return <a href="#"><h1 onClick={handleClick}className="arrow left">❮</h1></a>
     }
     return <></>;
